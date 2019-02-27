@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>longnhau</title>
+</head>
+<body>
+<script>
+    let b, x, y;
+    b = "<table border='1' width='400' height='400'>";
+    x = 1;
+    y = 1;
+    while (x <= 10) {
+        b = b + "<tr>";
+        while (y <= 10) {
+            b = b + "<td>" + x * y + "</td>";
+            y++;
+        }
+        y = 1;
+        x++;
+    }
+    document.write(b);
+</script>
+</body>
+</html>
